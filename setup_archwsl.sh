@@ -19,7 +19,7 @@ curl -s https://raw.githubusercontent.com/joshdick/onedark.vim/main/colors/oneda
 echo "done"
 
 echo "installing oh my posh..."
-curl -s https://ohmyposh.dev/install.sh | bash -s
+curl -s https://ohmyposh.dev/install.sh | sudo bash -s
 cp cfg/.omp.json ~/.omp.json
 echo "done"
 
@@ -33,7 +33,7 @@ echo "done"
 
 echo "installing node and node tools..."
 sudo pacman -Sq --noconfirm nodejs npm
-npm install -g typescript prettier sass heroku http-server
+sudo npm install -g typescript prettier sass heroku http-server
 echo "done"
 
 echo "installing c/c++ tools..."
